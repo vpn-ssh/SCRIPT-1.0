@@ -1,6 +1,6 @@
 #!/bin/bash
 clear
-[[ $(awk -F" " '{print $2}' /usr/lib/nzx) != "@Niltonjuniornzx" ]] && exit 0
+#[[ $(awk -F" " '{print $2}' /usr/lib/nzx) != "@CoutySSH" ]] && exit 0
 fun_swap() {
 _diskText=$(df -h | awk '$NF=="/"{printf "%d/%dGB + (%s)\n", $3,$2,$5}')
 _swap1=$(free -h | grep -i swap | awk {'print $2'})

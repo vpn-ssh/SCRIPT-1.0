@@ -1,6 +1,6 @@
 #!/bin/bash
 clear
-[[ $(awk -F" " '{print $2}' /usr/lib/nzx) != "@Niltonjuniornzx" ]] && exit 0
+#[[ $(awk -F" " '{print $2}' /usr/lib/nzx) != "@CoutySSH" ]] && exit 0
 tput setaf 7 ; tput setab 4 ; tput bold ; printf '%35s%s%-10s\n' "Alterar Senha de Usuário" ; tput sgr0
 echo ""
 echo -e "\033[1;33mLISTA DE USUARIOS E SUAS SENHAS: \033[0m"

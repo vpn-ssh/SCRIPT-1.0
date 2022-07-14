@@ -1,6 +1,6 @@
 #!/bin/bash
 clear
-[[ $(awk -F" " '{print $2}' /usr/lib/nzx) != "@Niltonjuniornzx" ]] && exit 0
+#[[ $(awk -F" " '{print $2}' /usr/lib/nzx) != "@Niltonjuniornzx" ]] && exit 0
 fun_bar() {
     comando[0]="$1"
     comando[1]="$2"
@@ -41,7 +41,7 @@ fun_botOnOff() {
         echo -e "\033[1;32mINICIANDO BOT SSH \033[0m\n"
         fun_bot1() {
             [[ ! -e "/etc/SSHPlus/ShellBot.sh" ]] && {
-				wget -qO- https://raw.githubusercontent.com/CoutyCT/scriptssh2/main/instalador/ShellBot.sh >/etc/SSHPlus/ShellBot.sh
+				wget -qO- https://raw.githubusercontent.com/vpn-ssh/SCRIPT-1.0/main/instalador/ShellBot.sh >/etc/SSHPlus/ShellBot.sh
 			}
             cd /etc/SSHPlus
             screen -dmS bot_plus ./bot $tokenbot $iduser >/dev/null 2>&1

@@ -1,6 +1,6 @@
 #!/bin/bash
 clear
-[[ $(awk -F" " '{print $2}' /usr/lib/nzx) != "@Niltonjuniornzx" ]] && exit 0
+#[[ $(awk -F" " '{print $2}' /usr/lib/nzx) != "@CoutySSH" ]] && exit 0
 
 fun_bar () {
 
@@ -62,7 +62,7 @@ fun_atts () {
 
   [[ -e /tmp/att ]] && rm /tmp/att
 
-	wget -c -P /home https://raw.githubusercontent.com/Niltonjuniornzx/scriptssh/main/versao
+	wget -c -P /home https://raw.githubusercontent.com/vpn-ssh/SCRIPT-1.0/main/versao
 
 	[[ -f "/home/versao" ]] && mv /home/versao /tmp/att
 
@@ -112,7 +112,7 @@ vrs2=$(sed -n '1 p' /tmp/att | sed -e 's/[^0-9]//ig')
 
   echo -e "  \033[1;36mEXISTE UMA NOVA ATUALIZACAO DISPONIVEL!\033[1;37m\n"
 
-  echo -e "  \033[1;37mMAIS INFORMACOES \033[1;31m(\033[1;36mTELEGRAM\033[1;31m): \033[1;37m@Niltonjuniornzx\n"
+  echo -e "  \033[1;37mMAIS INFORMACOES \033[1;31m(\033[1;36mTELEGRAM\033[1;31m): \033[1;37m@CoutySSH\n"
 
   echo -e "  \033[1;32mDETALHES DA ATUALIZACAO:\033[0m\n"
 
@@ -132,7 +132,7 @@ vrs2=$(sed -n '1 p' /tmp/att | sed -e 's/[^0-9]//ig')
 
     sleep 3
 
-    wget https://raw.githubusercontent.com/Niltonjuniornzx/scriptssh/main/att > /dev/null 2>&1
+    wget https://raw.githubusercontent.com/vpn-ssh/SCRIPT-1.0/main/att > /dev/null 2>&1
 
     chmod +x att
 

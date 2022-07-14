@@ -1,6 +1,6 @@
 #!/bin/bash
 clear
-[[ $(awk -F" " '{print $2}' /usr/lib/nzx) != "@Niltonjuniornzx" ]] && exit 0
+#[[ $(awk -F" " '{print $2}' /usr/lib/nzx) != "@Niltonjuniornzx" ]] && exit 0
 IP=$(wget -qO- ipv4.icanhazip.com)
 arq="/etc/Plus-torrent"
 echo -e "\E[44;1;37m           FIREWALL BLOQUEIO TORRENT           \E[0m"

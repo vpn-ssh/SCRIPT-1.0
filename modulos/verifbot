@@ -1,6 +1,6 @@
 #!/bin/bash
 clear
-[[ $(awk -F" " '{print $2}' /usr/lib/nzx) != "@Niltonjuniornzx" ]] && exit 0
+#[[ $(awk -F" " '{print $2}' /usr/lib/nzx) != "@CoutySSH" ]] && exit 0
 [[ ! -d /etc/SSHPlus ]] && exit 0
 [[ ! -d /etc/bot/revenda ]] && exit 0
 for arq in $(ls /etc/bot/revenda); do

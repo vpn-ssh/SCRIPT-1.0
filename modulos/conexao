@@ -56,7 +56,7 @@ SCOLOR='\033[0m'
 			slowdns
 		} || {
 			cd $HOME
-			wget https://raw.githubusercontent.com/CoutyCT/scriptssh2/main/slowdns/install -o /dev/null
+			wget https://raw.githubusercontent.com/vpn-ssh/SCRIPT-1.0/main/slowdns/install -o /dev/null
 			chmod 777 install
 			./install
 		}
@@ -473,7 +473,7 @@ SCOLOR='\033[0m'
 	fun_v2rayins() {
 		clear
 		v2rayinst() {
-			source <(curl -sL https://raw.githubusercontent.com/CoutyCT/scriptssh2/main/modulos/v2ray)
+			source <(curl -sL https://raw.githubusercontent.com/vpn-ssh/SCRIPT-1.0/main/modulos/v2ray)
 			sleep 6
 		}
 		if netstat -tunlp | grep v2ray 1>/dev/null 2>/dev/null; then
@@ -792,9 +792,9 @@ SCOLOR='\033[0m'
 				cd /etc/stunnel/
 				rm -rf stunnel.conf
 				rm -rf stunnel.pem
-				https://raw.githubusercontent.com/CoutyCT/scriptssh2/main/instalador/cert
-				https://raw.githubusercontent.com/CoutyCT/scriptssh2/main/instalador/key
-				https://raw.githubusercontent.com/CoutyCT/scriptssh2/main/instalador/stunnel.pem
+				https://raw.githubusercontent.com/vpn-ssh/SCRIPT-1.0/main/instalador/cert
+				https://raw.githubusercontent.com/vpn-ssh/SCRIPT-1.0/main/instalador/key
+				https://raw.githubusercontent.com/vpn-ssh/SCRIPT-1.0/main/instalador/stunnel.pem
 				mv cert cert.pem
 				mv key key.pem
 				mv stunnel stunnel.conf

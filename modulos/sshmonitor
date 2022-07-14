@@ -1,6 +1,6 @@
 #!/bin/bash
 clear
-[[ $(awk -F" " '{print $2}' /usr/lib/nzx) != "@Niltonjuniornzx" ]] && exit 0
+#[[ $(awk -F" " '{print $2}' /usr/lib/nzx) != "@CoutySSH" ]] && exit 0
 if [[ -e /usr/lib/licence ]]; then
 database="/root/usuarios.db"
 tmp_now=$(printf '%(%H%M%S)T\n')

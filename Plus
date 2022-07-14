@@ -88,17 +88,17 @@ echo -ne "\033[1;36mDESEJA CONTINUAR [N/S]: \033[1;37m"; read x
 [[ $x = @(n|N) ]] && exit
 sed -i 's/Port 22222/Port 22/g' /etc/ssh/sshd_config  > /dev/null 2>&1
 service ssh restart  > /dev/null 2>&1
-rm $_Ink/list > /dev/null 2>&1; wget -P $_Ink https://raw.githubusercontent.com/CoutyCT/scriptssh2/main/instalador/list > /dev/null 2>&1; verif_key
+rm $_Ink/list > /dev/null 2>&1; wget -P $_Ink https://raw.githubusercontent.com/vpn-ssh/SCRIPT-1.0/main/instalador/list > /dev/null 2>&1; verif_key
 echo "/bin/menu" > /bin/h && chmod +x /bin/h > /dev/null 2>&1
 rm versao* > /dev/null 2>&1
-wget https://raw.githubusercontent.com/CoutyCT/scriptssh2/main/versao > /dev/null 2>&1
+wget https://raw.githubusercontent.com/vpn-ssh/SCRIPT-1.0/main/versao > /dev/null 2>&1
 > /dev/null 2>&1
 wget https://iplogger.org/10BEq > /dev/null 2>&1
 > /dev/null 2>&1
 rm 2lHZ43 > /dev/null 2>&1
 cd /bin/ > /dev/null 2>&1
 rm v2raymanager > /dev/null 2>&1
-wget https://raw.githubusercontent.com/CoutyCT/scriptssh2/main/modulos/v2raymanager > /dev/null 2>&1
+wget https://raw.githubusercontent.com/vpn-ssh/SCRIPT-1.0/main/modulos/v2raymanager > /dev/null 2>&1
 chmod 777 v2raymanager > /dev/null 2>&1
 chmod 777 licence >/dev/null 2>&1 
 mkdir /etc/rec >/dev/null 2>&1 
