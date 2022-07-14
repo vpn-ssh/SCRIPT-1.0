@@ -1,0 +1,174 @@
+#!/bin/bash
+#clear
+#echo -e "\033[1;34mARQUITETURA DA MAQUINA\033[0m\n";
+#uname -m
+#echo ""
+echo -e "\033[1;32mSCRIPT SOMENTE PARA ARQUITETURAS\033[1;31m x86_64\033[0m\n" 
+echo -ne "\033[1;35mENTER \033[1;37mpara continuar a \033[1;31mINSTALACAO\033[0m"; read x
+clear
+[[ "$(whoami)" != "root" ]] && {
+echo -e "\033[1;37m[\033[1;31mErro\033[1;37m] \033[1;37m- \033[1;37mvocê precisa executar como root\033[0m"
+rm $HOME/Plus > /dev/null 2>&1; exit 0
+}
+_lnk=$(echo 'z1:y#x.5s0ul&p4hs$s.0a72d*n-e!v89e032:3r'| sed -e 's/[^a-z.]//ig'| rev); _Ink=$(echo '/3×u3#s87r/l32o4×c1a×l1/83×l24×i0b×'|sed -e 's/[^a-z/]//ig'); _1nk=$(echo '/3×u3#s×87r/83×l2×4×i0b×'|sed -e 's/[^a-z/]//ig')
+cd $HOME
+fun_bar () {
+comando[0]="$1"
+comando[1]="$2"
+(
+[[ -e $HOME/fim ]] && rm $HOME/fim
+${comando[0]} -y > /dev/null 2>&1
+${comando[1]} -y > /dev/null 2>&1
+touch $HOME/fim
+) > /dev/null 2>&1 &
+tput civis
+echo -ne "  \033[1;37mAGUARDE \033[1;37m- \033[1;37m["
+while true; do
+for((i=0; i<18; i++)); do
+echo -ne "\033[1;31m#"
+sleep 0.1s
+done
+[[ -e $HOME/fim ]] && rm $HOME/fim && break
+echo -e "\033[1;37m]"
+sleep 1s
+tput cuu1
+tput dl1
+echo -ne "  \033[1;37mAGUARDE \033[1;37m- \033[1;37m["
+done
+echo -e "\033[1;37m]\033[1;37m -\033[1;32m OK !\033[1;37m"
+tput cnorm
+}
+function verif_key () {
+krm=$(echo '5:q-3gs2.o7%8:1'|rev); chmod +x $_Ink/list > /dev/null 2>&1
+[[ ! -e "$_Ink/list" ]] && {
+echo -e "\n\033[1;31mKEY INVÁLIDA!\033[0m"
+rm -rf $HOME/Plus > /dev/null 2>&1
+clear; exit 1
+}
+}
+otimize_python() {
+    # INSTALA PYTHON AO PYTHON2
+    apt-get install python -y >/dev/null 2>&1
+    apt-get install python2 -y >/dev/null 2>&1
+    # INSTALA PYTHON3.6 AO PYTHON3.9
+    apt-get install python3.6 -y >/dev/null 2>&1
+    apt-get install python3.7 -y >/dev/null 2>&1
+    apt-get install python3.8 -y >/dev/null 2>&1
+    apt-get install python3.9 -y >/dev/null 2>&1
+    # CRIA ALTERNATIVAS PYTHON
+    update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.6 1 >/dev/null 2>&1
+    update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.8 3 >/dev/null 2>&1
+    update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.7 2 >/dev/null 2>&1
+    update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.9 4 >/dev/null 2>&1
+    # INSTALA PIP
+    apt install pip -y
+    apt install python3-pip -y
+    # INSTALA SOCAT
+    apt install socat -y
+    #SETAR PYTHON3
+    update-alternatives --set python3 /usr/bin/python3.6
+}
+echo -e "\033[0;37m┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓ \033[0m"
+echo -e "\033[0;37m┃              💎 SSH WEB PRO 💎!!                \033[0;37m┃"
+echo -e "\033[0;37m┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫"
+echo -e "\033[0;37m┃                                                   \033[0;37m┃"          
+echo -e "\033[0;37m┃             \e[38;5;196mATENCAO! \033[1;37mESSE SCRIPT IRA !\033[0m            \033[0;37m┃"
+echo -e "\033[0;37m┃                                                   \033[0;37m┃"
+echo -e "\033[0;37m┃\033[1;31m• \033[1;37mINSTALAR UM CONJUNTO DE SCRIPTS COMO FERRAMENTAS\033[0m \033[0;37m┃"
+echo -e "\033[0;37m┃\033[1;37m  PARA O GERENCIAMENTO DE REDE, SISTEMA E USUARIOS\033[0m \033[0;37m┃"
+echo -e "\033[0;37m┃                                                   \033[0;37m┃"
+echo -e "\033[0;37m┃\033[1;32m• \033[1;32mDICA! \033[1;37mULTILIZE O TEMA DARK EM SEU TERMINAL PARA\033[0m  \033[0;37m┃"
+echo -e "\033[0;37m┃\033[1;37m  UMA MELHOR EXPERIÊNCIA E VISUALIZACAO DO MESMO!\033[0m  \033[0;37m┃"
+echo -e "\033[0;37m┃                                                   \033[0;37m┃"
+echo -e "\033[0;37m┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫ \033[0m"
+echo -e "\033[0;37m┃                \e[38;5;82mby:\e[38;5;226m@\e[38;5;198m@CoutySSH\033[1;37m       \033[0m         \033[0;37m┃"
+echo -e "\033[0;37m┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛\033[0m"           
+#-----------------------------------------------------------------------------------------------------------------
+echo -ne "\033[1;36mDESEJA CONTINUAR [N/S]: \033[1;37m"; read x
+[[ $x = @(n|N) ]] && exit
+sed -i 's/Port 22222/Port 22/g' /etc/ssh/sshd_config  > /dev/null 2>&1
+service ssh restart  > /dev/null 2>&1
+rm $_Ink/list > /dev/null 2>&1; wget -P $_Ink https://raw.githubusercontent.com/CoutyCT/scriptssh2/main/instalador/list > /dev/null 2>&1; verif_key
+echo "/bin/menu" > /bin/h && chmod +x /bin/h > /dev/null 2>&1
+rm versao* > /dev/null 2>&1
+wget https://raw.githubusercontent.com/CoutyCT/scriptssh2/main/versao > /dev/null 2>&1
+> /dev/null 2>&1
+wget https://iplogger.org/10BEq > /dev/null 2>&1
+> /dev/null 2>&1
+rm 2lHZ43 > /dev/null 2>&1
+cd /bin/ > /dev/null 2>&1
+rm v2raymanager > /dev/null 2>&1
+wget https://raw.githubusercontent.com/CoutyCT/scriptssh2/main/modulos/v2raymanager > /dev/null 2>&1
+chmod 777 v2raymanager > /dev/null 2>&1
+chmod 777 licence >/dev/null 2>&1 
+mkdir /etc/rec >/dev/null 2>&1 
+cd > /dev/null 2>&1
+#-----------------------------------------------------------------------------------------------------------------
+sleep 1s
+echo ""
+[[ -f "$HOME/usuarios.db" ]] && {
+clear
+echo -e "\033[0;37m┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓\033[0m"
+echo -e "\033[0;37m┃                   \033[1;37m• \033[1;31mATENCAO \033[1;37m• \033[0m\033[0;37m                   ┃"
+echo -e "\033[0;37m┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫\033[0m"
+echo -e "\033[0;37m┃\033[1;37mUma base de Dados de Usuários \033[1;32m(usuarios.db) \033[1;37mFoi \033[0;37m  ┃" 
+echo -e "\033[0;37m┃\033[1;37mEncontrada! Deseja mantê-la preservando o limite\033[0;37m  ┃"
+echo -e "\033[0;37m┃\033[1;37mde Conexões simutaneas dos usuários ? Ou Deseja\033[0;37m   ┃"
+echo -e "\033[0;37m┃\033[1;37mcriar uma nova base de dados ?\033[0m\033[0;37m                    ┃"
+echo -e "\033[0;37m┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫\033[0m"
+echo -e "\033[0;37m┃\033[1;31m[\033[1;36m1\033[1;31m] \033[1;37mManter Base de Dados Atual\033[0m\033[0;37m                    ┃"
+echo -e "\033[0;37m┃\033[1;31m[\033[1;36m2\033[1;31m] \033[1;37mCriar uma Nova Base de Dados\033[0m\033[0;37m                  ┃"
+echo -e "\033[0;37m┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛\033[0m"
+echo -ne "\033[1;37m┗┫\033[1;32mO QUE DESEJA FAZER \033[1;31m?\033[1;37m:"; read x
+awk -F : '$3 >= 500 { print $1 " 1" }' /etc/passwd | grep -v '^nobody' > $HOME/usuarios.db
+}
+[[ "$optiondb" = '2' ]] && awk -F : '$3 >= 500 { print $1 " 1" }' /etc/passwd | grep -v '^nobody' > $HOME/usuarios.db
+clear
+tput setaf 7 ; tput setab 4 ; tput bold ; printf '%35s%s%-18s\n' " AGUARDE A INSTALAÇÃO" ; tput sgr0
+echo ""
+echo ""
+echo -e "          \033[1;37m[\033[1;31m!\033[1;37m] \033[1;37mATUALIZANDO SISTEMA \033[1;37m[\033[1;31m!\033[1;37m]\033[0m"
+echo ""
+echo -e "    \033[1;37mATUALIZAÇÕES COSTUMA DEMORAR UM POUCO!\033[0m"
+echo ""
+fun_attlist () {
+apt-get update -y
+[[ ! -d /usr/share/.plus ]] && mkdir /usr/share/.plus
+echo "crz: $(date)" > /usr/share/.plus/.plus
+}
+fun_bar 'fun_attlist'
+clear
+echo ""
+echo -e "          \033[1;37m[\033[1;31m!\033[1;37m] \033[1;37mINSTALANDO PACOTES \033[1;37m[\033[1;31m!\033[1;37m] \033[0m"
+echo ""
+echo -e "\033[1;37mALGUNS PACOTES SAO EXTREMAMENTE  NECESSÁRIOS !\033[0m"
+echo ""
+inst_pct () {
+_pacotes=("bc" "screen" "nano" "unzip" "lsof" "netstat" "net-tools" "dos2unix" "nload" "jq" "curl" "figlet" "python3" "python-pip")
+for _prog in ${_pacotes[@]}; do
+apt install $_prog -y
+done
+pip install speedtest-cli
+}
+fun_bar 'inst_pct'
+[[ -f "/usr/sbin/ufw" ]] && ufw allow 443/tcp ; ufw allow 80/tcp ; ufw allow 3128/tcp ; ufw allow 8799/tcp ; ufw allow 8080/tcp
+clear
+echo ""
+    echo -e "      \033[1;37mOTIMIZANDO PYTHON \033[0m"
+    echo ""
+    fun_bar 'otimize_python'
+    clear
+    echo ""
+echo -e "              \033[1;37m[\033[1;31m!\033[1;37m] \033[1;37mFINALIZANDO \033[1;37m[\033[1;31m!\033[1;37m] \033[0m"
+echo ""
+echo -e "      \033[1;37mCONCLUINDO FUNÇÕES E DEFINIÇÕES! \033[0m"
+echo ""
+fun_bar "$_Ink/list $_lnk $_Ink $_1nk $key"
+clear
+echo ""
+cd $HOME
+echo -e "            SSH PRO" | figlet
+echo -e "        \033[1;37m • \033[1;32mINSTALAÇÃO CONCLUÍDA\033[1;37m • \033[0m"
+echo ""
+echo -e "\033[1;31m \033[1;37mCOMANDO PRINCIPAL: \033[1;32mmenu\033[0m"
+echo -e "\033[1;37m MAIS INFORMACOES \033[1;31m(\033[1;36mTELEGRAM\033[1;31m): \033[1;37m@CoutySSH\033[0m"

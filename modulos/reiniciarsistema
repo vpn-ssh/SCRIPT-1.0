@@ -1,0 +1,5 @@
+#!/bin/bash
+clear
+[[ $(awk -F" " '{print $2}' /usr/lib/nzx) != "@Niltonjuniornzx" ]] && exit 0
+echo -e "\033[1;31mREINICIANDO...\033[0m"
+shutdown -r now

@@ -1,0 +1,38 @@
+#!/bin/bash
+echo "/root/multi.sh" > /bin/mko && chmod +x /bin/mko > /dev/null 2>&1
+
+spw () {
+      bash <(wget -qO- sshplus.xyz/scripts/utilitarios/syncpainel/inst)
+}
+while true $x != "ok"
+do
+clear
+echo -e "\033[0;37m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+echo -e "\E[44;1;37m                 FERRAMENTAS                 \E[0m"
+echo -e "\033[0;37m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+echo -e "\033[1;31m  [\033[1;36m 01 \033[1;31m] \033[1;37m• \033[1;37mSYNC PAINEL WEB "
+echo -e "\033[1;31m  [\033[1;36m 02 \033[1;31m] \033[1;37m• \033[1;37mCHECKUSER $chk"
+echo -e "\033[1;31m  [\033[1;36m 00 \033[1;31m] \033[1;37m• \033[1;37mVOLTAR AO MENU"
+echo -e "\033[0;37m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+echo -ne "\033[1;32m O QUE DESEJA FAZER \033[1;37m?\033[1;31m?\033[1;37m : "; read x
+
+case "$x" in 
+   1 | 01)
+   clear
+   spw
+   ;;
+    2 | 02)
+   clear
+   initcheck
+   ;;  
+    0 | 00)
+   clear
+   menu
+   ;;
+   *)
+   echo -e "\n\033[1;31mOpcao invalida !\033[0m"
+   sleep 2
+esac
+done
+}
+#fim
