@@ -1,6 +1,6 @@
 #!/bin/bash
 clear
-[[ $(awk -F" " '{print $2}' /usr/lib/nzx) != "@CoutySSH" ]] && exit 0
+#[[ $(awk -F" " '{print $2}' /usr/lib/nzx) != "@CoutySSH" ]] && exit 0
 tput setaf 7 ; tput setab 4 ; tput bold ; printf '%20s%s\n' "   Alterar limite de conexões simultâneas   " ; tput sgr0
 database="/root/usuarios.db"
 if [ ! -f "$database" ]; then

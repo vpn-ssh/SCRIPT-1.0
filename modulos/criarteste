@@ -1,6 +1,6 @@
 #!/bin/bash
 clear
-[[ $(awk -F" " '{print $2}' /usr/lib/nzx) != "@CoutySSH" ]] && exit 0
+#[[ $(awk -F" " '{print $2}' /usr/lib/nzx) != "@CoutySSH" ]] && exit 0
 IP=$(cat /etc/IP)
 if [ ! -d /etc/SSHPlus/userteste ]; then
 mkdir /etc/SSHPlus/userteste
