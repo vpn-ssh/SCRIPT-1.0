@@ -3,8 +3,8 @@
 #echo -e "\033[1;34mARQUITETURA DA MAQUINA\033[0m\n";
 #uname -m
 #echo ""
-echo -e "\033[1;32mSCRIPT SOMENTE PARA ARQUITETURAS\033[1;31m x86_64\033[0m\n" 
-echo -ne "\033[1;35mENTER \033[1;37mpara continuar a \033[1;31mINSTALACAO\033[0m"; read x
+#echo -e "\033[1;32mSCRIPT SOMENTE PARA ARQUITETURAS\033[1;31m x86_64\033[0m\n" 
+#echo -ne "\033[1;35mENTER \033[1;37mpara continuar a \033[1;31mINSTALACAO\033[0m"; read x
 clear
 [[ "$(whoami)" != "root" ]] && {
 echo -e "\033[1;37m[\033[1;31mErro\033[1;37m] \033[1;37m- \033[1;37mvocê precisa executar como root\033[0m"
