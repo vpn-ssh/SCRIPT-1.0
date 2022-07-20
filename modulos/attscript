@@ -70,9 +70,9 @@ fun_atts () {
 
 } > /dev/null 2>&1
 
-echo -e "                              \033[1;31mNiltonjuniornzx\033[1;36m"
+echo -e "                              \033[1;31mCoutySSH\033[1;36m"
 
-echo -e "   nzx on !!" | figlet
+echo -e "   Couty SSH !!" | figlet
 
 echo " "
 

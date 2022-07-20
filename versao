@@ -1,6 +1,4 @@
-VERSAO: 03
+VERSAO: 04
 
-
-echo -e "            SSH PRO" | figlet
 Ao atualizar ocorrerar de
 desativar algumas portas.
